@@ -6,7 +6,6 @@ body {
     font-family: Verdana, Arial, Courier, Sans-Serif;
     font-size: 10pt;
     font-weight: normal;
-    height: 100%;
     /* Prevent selection */
     -webkit-touch-callout: none;
     -webkit-user-select: none;

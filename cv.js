@@ -28,6 +28,7 @@ function main() {
         event = event || window.event;
         _width = window.innerWidth;
         _height = window.innerHeight;
+        document.body.style.height = _height + "px";
         updateDebugInfo();
     }
 
