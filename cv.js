@@ -10,12 +10,12 @@ function main() {
         var debugPanel = document.getElementById("debug");
         debugPanel.innerHTML = [
             "<table>",
-            "<tr><td>Width:</td><td>", _width, "</td></tr>",
-            "<tr><td>Height:</td><td>", _height, "</td></tr>",
-            "<tr><td>Scroll Y:</td><td>", _scrollY, "</td></tr>",
+            "<tr><td>Size and offset:</td><td>", _width, "x", _height,
+            "@", _scrollY, "</td></tr>",
             "</table>"
         ].join("");
         debugPanel.style.top = _scrollY + "px";
+        debugPanel.style.left = Math.max(_width - 320, 4) + "px";
     }
 
     function _onScroll(event) {
@@ -35,6 +35,9 @@ function main() {
     // Install handlers
     window.onscroll = _onScroll;
     window.onresize = _onResize;
+    window.email = function () {
+        alert("email!");
+    };
 
     _onResize();
     _onScroll();
