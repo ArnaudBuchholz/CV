@@ -2,7 +2,8 @@ body {
     background-color: white;
     color: black;
     margin: 0;
-    padding: 8px;
+    padding: 0px;
+    margin: 0px;
     font-family: Verdana, Arial, Courier, Sans-Serif;
     font-size: 10pt;
     font-weight: normal;
@@ -23,10 +24,47 @@ body {
     min-width: 100px;
     min-height: 40px;
     background-color: white;
-    padding: 4px;
+    padding: 1px;
     color: crimson;
+    z-index: 999;
 }
 
 .section {
     min-height: 100%;
+}
+
+.who {
+    background-image: url(header.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: left center;
+    text-align: center;
+}
+
+.me {
+    border: solid 2px white;
+    border-radius: 25px;
+}
+
+.github {
+    width: 64px;
+    height: 64px;
+    display: inline-block;
+    background-image: url(github.png);
+}
+
+.linkedin {
+    width: 64px;
+    height: 64px;
+    display: inline-block;
+    background-image: url(linkedin.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.email {
+    width: 64px;
+    height: 64px;
+    display: inline-block;
+    background-image: url(email.png);
 }
