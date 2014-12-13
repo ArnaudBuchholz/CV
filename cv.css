@@ -33,11 +33,19 @@ body {
     min-height: 100%;
 }
 
-.who {
+.gpf-landscape .who {
     background-image: url(header.jpg);
-    background-size: 100%;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: left center;
+    text-align: center;
+}
+
+.gpf-portrait .who {
+    background-image: url(header.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
     text-align: center;
 }
 
