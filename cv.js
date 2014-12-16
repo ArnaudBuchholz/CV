@@ -1,3 +1,4 @@
+/*exported main*/
 function main() {
     "use strict";
 
@@ -35,8 +36,3 @@ function main() {
         alert("email!");
     };
 }
-
-window.onload = function () {
-    "use strict";
-    gpf.loaded(main);
-};

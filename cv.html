@@ -5,13 +5,6 @@
         <meta name="viewport" content="initial-scale = 1.0,maximum-scale = 1.0" />
         <meta http-equiv="content-type" content="text/html; charset=utf-8" />
         <link rel="stylesheet" type="text/css" href="cv.css">
-        <script language="javascript" src="../gpf-js/html_include.js"></script>
-        <script language="javascript">
-            if("undefined" === typeof gpf) {
-                document.write("<script language=\"javascript\" src=\"gpf.js\"><"+"/script>");
-            }
-        </script>
-        <script language="javascript" src="cv.js"></script>
     </head>
     <body>
         <div id="debug"></div>
@@ -54,5 +47,13 @@
         <div class="section">
             <h1>Hobbies and Activities</h1>
         </div>
+        <!-- Code inserted at the end for optimal loading time -->
+        <script language="javascript" src="cv.js"></script>
+        <script language="javascript" gpf-loaded="main" src="../gpf-js/html_include.js"></script>
+        <script language="javascript">
+            if("undefined" === typeof gpf) {
+                document.write("<script language=\"javascript\" src=\"gpf.js\"><"+"/script>");
+            }
+        </script>
     </body>
 </html>
